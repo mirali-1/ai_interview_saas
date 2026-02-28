@@ -1,5 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000";
-
+const API_BASE = window.location.origin;
 async function register() {
     const name = document.getElementById("register-name").value;
     const email = document.getElementById("register-email").value;
