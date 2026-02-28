@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | AI Interview SaaS</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- HEADER -->
+    <div class="dashboard-header">
+        <h2>Welcome, <span id="user-name">User</span> 👋</h2>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="dashboard-grid">
+
+        <!-- LEFT SIDE - FORM -->
+        <div class="card">
+            <h3>Generate AI Interview</h3>
+
+            <input id="role" type="text"
+                   placeholder="Role (e.g Backend Developer)">
+
+            <input id="experience" type="text"
+                   placeholder="Experience (e.g 1 year)">
+
+            <input id="tech_stack" type="text"
+                   placeholder="Tech Stack (e.g Python, FastAPI, PostgreSQL)">
+
+            <!-- Generate Button with Loader -->
+            <button id="generate-btn" onclick="generateInterview()">
+                <span id="btn-text">Generate Interview</span>
+                <span id="loader" class="loader hidden"></span>
+            </button>
+        </div>
+
+        <!-- RIGHT SIDE - OUTPUT -->
+        <div class="card">
+            <h3>Generated Interview</h3>
+
+            <div id="result-box" class="result-box">
+                Your interview will appear here...
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="/static/dashboard.js"></script>
+
+</body>
+</html>

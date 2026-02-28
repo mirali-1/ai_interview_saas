@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Interview SaaS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Floating Background Blobs -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+
+    <!-- Glass Card -->
+    <div class="container">
+
+    <h1>AI Interview SaaS</h1>
+
+    <h3>Login</h3>
+    <input id="login-email" type="email" placeholder="Email">
+    <input id="login-password" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <div class="divider"></div>
+
+    <h3>Register</h3>
+    <input id="register-name" type="text" placeholder="Name">
+    <input id="register-email" type="email" placeholder="Email">
+    <input id="register-password" type="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+
+    <p id="message" style="color: #00ffcc; margin-top:15px;"></p>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
