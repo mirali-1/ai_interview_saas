@@ -9,7 +9,7 @@ from app.routes import auth
 from app.routes import interview
 
 # Import database
-from app.database import Base, engine
+from app.db.database import Base, engine
 
 # -----------------------------
 # Create FastAPI App
